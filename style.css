@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+}
+
+nav {
+    margin: 0 0 0 auto;
+}
+
+.main-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.taku, .drink, .keisyoku {
+    width: 300px;
+}
+
+.reSize {
+    object-fit: cover;
+    width: 250px;
+    height: 200px;
+}
+
+.title {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    font-weight: normal;
+    color: green;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.greetingImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media(min-width: 768px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    li {
+        font-size: 12px;
+    }
+    .taku, .drink, .keisyoku {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .br::before {
+        content: "\A" ;
+        white-space: pre ;
+    }
+}

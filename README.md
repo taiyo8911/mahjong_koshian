@@ -1,2 +1,2 @@
 # mahjong_koshian
-雀荘のWebサイト
+## 架空の雀荘のWebサイト

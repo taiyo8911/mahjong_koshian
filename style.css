@@ -51,9 +51,7 @@ nav {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url(main.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(images/main.jpg) no-repeat center / cover;
 }
 
 main {
@@ -71,6 +69,8 @@ h2 {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .taku, .drink, .keisyoku {
@@ -91,7 +91,6 @@ h2 {
 }
 
 .center {
-    width: 100%;
     text-align: center;
 }
 
@@ -108,17 +107,17 @@ h2 {
     border-radius: 50%;
 }
 
-@media(min-width: 768px) {
-    a[href^="tel:"] {
-        pointer-events: none;
-    }
-}
-
 footer {
     width: 100%;
     padding: 30px 4% 10px;
     background-color: #fff;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -127,18 +126,22 @@ footer {
         width: 100%;
         text-align: center;
     }
+
     h1 {
         font-size: 15px;
     }
+
     li {
         font-size: 12px;
     }
+
     .taku, .drink, .keisyoku {
         width: 300px;
         margin: 0 auto;
     }
+
     .br::before {
-        content: "\A" ;
-        white-space: pre ;
+        content: "\A";
+        white-space: pre;
     }
 }
